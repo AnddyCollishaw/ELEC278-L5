@@ -1,4 +1,8 @@
-ollishaw, Andy - Kung, Matthew  Size of Dataset: 100000
+Collishaw, Andy 20282214
+Kung, Matthew 20259215
+
+
+Collishaw, Andy - Kung, Matthew  Size of Dataset: 100000
                    Elapsed Time      Number of Swaps
 Original Quicksort: 20               393085
 Hyprid Quicksort:   17               1118604

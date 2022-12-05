@@ -76,17 +76,20 @@ int main (void)
 
 
 
-
+//create pointer for file 
 FILE *fp; 
 
+	//creaet//open file and set it to the pointer 
     fp = fopen("LAB5_PART3.TXT", "w");
 
+	//check that the file was oppened properly 
     if(fp == NULL){
         printf("\nCouldn't Open File\n");
         return -1;
 	}
 
-	fprintf(fp,"ollishaw, Andy - Kung, Matthew  Size of Dataset: %d\n", size);
+	//Print the data into the file 
+	fprintf(fp,"Collishaw, Andy - Kung, Matthew  Size of Dataset: %d\n", size);
 	fprintf(fp,"                   Elapsed Time      Number of Swaps\n"); 
 	fprintf(fp,"Original Quicksort: %d               %d\n", mid-start, rslt1);
 	fprintf(fp,"Hyprid Quicksort:   %d               %d", end-mid, rslt);

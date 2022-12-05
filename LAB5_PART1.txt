@@ -1,0 +1,237 @@
+Collishaw, Andy 20282214
+Kung, Matthew 20259215
+
+*****************Verbose=0*****************
+
+==Check array before sort
+    Array is unsorted
+Quicksort
+End time: 0  Start time:  0  Diff: 0
+Final array:
+  463  491  694 1086 6270 7891 8881 9042
+ 9401 11301 11463 11862 12009 13661 15019 15438
+ 16085 16245 16918 17763 18725 19933 20023 20805
+ 21113 23740 25615 27220 28063 29352
+==After sort, array is sorted
+Swaps:  37  CPU time:  0
+
+*****************Verbose=1*****************
+File thirty.TXT      contains 30 data items
+Array before any work done:
+ 25615 6270 15438 9401 27220 28063 13661 16245 15019 1086
+ 7891 11862 21113 23740 19933 12009  491 11301 29352  694
+ 20023 17763 11463 16918 18725 8881 16085 20805  463 9042
+==Check array before sort
+Sort check failed at position 0
+a[0] = 25615, a[1] = 6270
+    Array is unsorted
+Quicksort
+
+Quicksort: left = 0   right = 29
+Partition around value in position 0 - 25615
+Swap elements at 4 (27220) and 29 (9042)
+Swap elements at 5 (28063) and 28 (463)
+Swap elements at 18 (29352) and 27 (20805)
+Swap elements at 26 (16085) and 0 (25615)
+    Completed partition, pivot at: 26
+                                                                                                                                     V
+ 16085 6270 15438 9401 9042  463 13661 16245 15019 1086 7891 11862 21113 23740 19933 12009  491 11301 20805  694
+
+Quicksort: left = 0   right = 25
+Partition around value in position 0 - 16085
+Swap elements at 7 (16245) and 25 (8881)
+Swap elements at 12 (21113) and 22 (11463)
+Swap elements at 13 (23740) and 19 (694)
+Swap elements at 14 (19933) and 17 (11301)
+Swap elements at 16 (491) and 0 (16085)
+    Completed partition, pivot at: 16
+                                                                                   V
+  491 6270 15438 9401 9042  463 13661 8881 15019 1086 7891 11862 11463  694 11301 12009 16085 19933 20805 23740
+
+Quicksort: left = 0   right = 15
+Partition around value in position 0 - 491
+Swap elements at 1 (6270) and 5 (463)
+Swap elements at 1 (463) and 0 (491)
+    Completed partition, pivot at: 1
+        V
+  463  491 15438 9401 9042 6270 13661 8881 15019 1086 7891 11862 11463  694 11301 12009 16085 19933 20805 23740
+
+Quicksort: left = 0   right = 0
+
+Quicksort: left = 2   right = 15
+Partition around value in position 2 - 15438
+Swap elements at 15 (12009) and 2 (15438)
+    Completed partition, pivot at: 15
+                                                                              V
+  463  491 12009 9401 9042 6270 13661 8881 15019 1086 7891 11862 11463  694 11301 15438 16085 19933 20805 23740
+
+Quicksort: left = 2   right = 14
+Partition around value in position 2 - 12009
+Swap elements at 6 (13661) and 14 (11301)
+Swap elements at 8 (15019) and 13 (694)
+Swap elements at 12 (11463) and 2 (12009)
+    Completed partition, pivot at: 12
+                                                               V
+  463  491 11463 9401 9042 6270 11301 8881  694 1086 7891 11862 12009 15019 13661 15438 16085 19933 20805 23740
+
+Quicksort: left = 2   right = 11
+Partition around value in position 2 - 11463
+Swap elements at 10 (7891) and 2 (11463)
+    Completed partition, pivot at: 10
+                                                     V
+  463  491 7891 9401 9042 6270 11301 8881  694 1086 11463 11862 12009 15019 13661 15438 16085 19933 20805 23740
+
+Quicksort: left = 2   right = 9
+Partition around value in position 2 - 7891
+Swap elements at 3 (9401) and 9 (1086)
+Swap elements at 4 (9042) and 8 (694)
+Swap elements at 5 (6270) and 2 (7891)
+    Completed partition, pivot at: 5
+                            V
+  463  491 6270 1086  694 7891 11301 8881 9042 9401 11463 11862 12009 15019 13661 15438 16085 19933 20805 23740
+
+Quicksort: left = 2   right = 4
+Partition around value in position 2 - 6270
+Swap elements at 4 (694) and 2 (6270)
+    Completed partition, pivot at: 4
+                       V
+  463  491  694 1086 6270 7891 11301 8881 9042 9401 11463 11862 12009 15019 13661 15438 16085 19933 20805 23740
+
+Quicksort: left = 2   right = 3
+Partition around value in position 2 - 694
+Swap elements at 2 (694) and 2 (694)
+    Completed partition, pivot at: 2
+             V
+  463  491  694 1086 6270 7891 11301 8881 9042 9401 11463 11862 12009 15019 13661 15438 16085 19933 20805 23740
+
+Quicksort: left = 2   right = 1
+
+Quicksort: left = 3   right = 3
+
+Quicksort: left = 5   right = 4
+
+Quicksort: left = 6   right = 9
+Partition around value in position 6 - 11301
+Swap elements at 9 (9401) and 6 (11301)
+    Completed partition, pivot at: 9
+                                                V
+  463  491  694 1086 6270 7891 9401 8881 9042 11301 11463 11862 12009 15019 13661 15438 16085 19933 20805 23740
+
+Quicksort: left = 6   right = 8
+Partition around value in position 6 - 9401
+Swap elements at 8 (9042) and 6 (9401)
+    Completed partition, pivot at: 8
+                                           V
+  463  491  694 1086 6270 7891 9042 8881 9401 11301 11463 11862 12009 15019 13661 15438 16085 19933 20805 23740
+
+Quicksort: left = 6   right = 7
+Partition around value in position 6 - 9042
+Swap elements at 7 (8881) and 6 (9042)
+    Completed partition, pivot at: 7
+                                      V
+  463  491  694 1086 6270 7891 8881 9042 9401 11301 11463 11862 12009 15019 13661 15438 16085 19933 20805 23740
+
+Quicksort: left = 6   right = 6
+
+Quicksort: left = 8   right = 7
+
+Quicksort: left = 9   right = 8
+
+Quicksort: left = 10   right = 9
+
+Quicksort: left = 11   right = 11
+
+Quicksort: left = 13   right = 14
+Partition around value in position 13 - 15019
+Swap elements at 14 (13661) and 13 (15019)
+    Completed partition, pivot at: 14
+                                                                         V
+  463  491  694 1086 6270 7891 8881 9042 9401 11301 11463 11862 12009 13661 15019 15438 16085 19933 20805 23740
+
+Quicksort: left = 13   right = 13
+
+Quicksort: left = 15   right = 14
+
+Quicksort: left = 16   right = 15
+
+Quicksort: left = 17   right = 25
+Partition around value in position 17 - 19933
+Swap elements at 18 (20805) and 25 (16245)
+Swap elements at 19 (23740) and 24 (18725)
+Swap elements at 20 (20023) and 23 (16918)
+Swap elements at 21 (17763) and 17 (19933)
+    Completed partition, pivot at: 21
+                                                                                                            V
+  463  491  694 1086 6270 7891 8881 9042 9401 11301 11463 11862 12009 13661 15019 15438 16085 17763 16245 18725
+
+Quicksort: left = 17   right = 20
+Partition around value in position 17 - 17763
+Swap elements at 19 (18725) and 20 (16918)
+Swap elements at 19 (16918) and 17 (17763)
+    Completed partition, pivot at: 19
+                                                                                                  V
+  463  491  694 1086 6270 7891 8881 9042 9401 11301 11463 11862 12009 13661 15019 15438 16085 16918 16245 17763
+
+Quicksort: left = 17   right = 18
+Partition around value in position 17 - 16918
+Swap elements at 18 (16245) and 17 (16918)
+    Completed partition, pivot at: 18
+                                                                                             V
+  463  491  694 1086 6270 7891 8881 9042 9401 11301 11463 11862 12009 13661 15019 15438 16085 16245 16918 17763
+
+Quicksort: left = 17   right = 17
+
+Quicksort: left = 19   right = 18
+
+Quicksort: left = 20   right = 20
+
+Quicksort: left = 22   right = 25
+Partition around value in position 22 - 21113
+Swap elements at 24 (23740) and 25 (20805)
+Swap elements at 24 (20805) and 22 (21113)
+    Completed partition, pivot at: 24
+                                                                                                                           V
+  463  491  694 1086 6270 7891 8881 9042 9401 11301 11463 11862 12009 13661 15019 15438 16085 16245 16918 17763
+
+Quicksort: left = 22   right = 23
+Partition around value in position 22 - 20805
+Swap elements at 23 (20023) and 22 (20805)
+    Completed partition, pivot at: 23
+                                                                                                                      V
+  463  491  694 1086 6270 7891 8881 9042 9401 11301 11463 11862 12009 13661 15019 15438 16085 16245 16918 17763
+
+Quicksort: left = 22   right = 22
+
+Quicksort: left = 24   right = 23
+
+Quicksort: left = 25   right = 25
+
+Quicksort: left = 27   right = 29
+Partition around value in position 27 - 29352
+Swap elements at 29 (27220) and 27 (29352)
+    Completed partition, pivot at: 29
+                                                                                                                                                    V
+  463  491  694 1086 6270 7891 8881 9042 9401 11301 11463 11862 12009 13661 15019 15438 16085 16245 16918 17763
+
+Quicksort: left = 27   right = 28
+Partition around value in position 27 - 27220
+Swap elements at 27 (27220) and 27 (27220)
+    Completed partition, pivot at: 27
+                                                                                                                                          V
+  463  491  694 1086 6270 7891 8881 9042 9401 11301 11463 11862 12009 13661 15019 15438 16085 16245 16918 17763
+
+Quicksort: left = 27   right = 26
+
+Quicksort: left = 28   right = 28
+
+Quicksort: left = 30   right = 29
+End time: 2  Start time:  1  Diff: 1
+Final array:
+  463  491  694 1086 6270 7891 8881 9042
+ 9401 11301 11463 11862 12009 13661 15019 15438
+ 16085 16245 16918 17763 18725 19933 20023 20805
+ 21113 23740 25615 27220 28063 29352
+==After sort, array is sorted
+Swaps:  37  CPU time:  1
+
+[Done] exited with code=0 in 0.451 seconds

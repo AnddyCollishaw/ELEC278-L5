@@ -1,0 +1,16 @@
+Collishaw, Andy 20282214
+Kung, Matthew 20259215
+
+
+Collishaw, Andy - Kung, Matthew DATASET SIZE: 5000
+                           RANDOM                                     ASCENDING                           DESCENDING
+Sort                       ||   Elapsed Time   # of SWAPS             Elapsed Time   # of SWAPS           Elapsed Time   # of SWAPS
+Bubble Sort                ||   132           6212577                   0             0                   143            12497500
+Insertion Sort             ||   54            6212577                   4             0                   125            12497500
+Heap Sort                  ||   6             57128                     4             60933               6              53437
+Merge Sort                 ||   8             1002                      4             0                   10              2048
+Quick Sort                 ||   6             15601                     40            4999                39             7047
+Radix Sort                 ||   125           0                         203            0                   30             0
+Selection Sort-Iterative   ||   41            20600                     48            9998                53             12046
+Selection Sort-Recurssive  ||   40            25599                     42            14997               45             17045
+Shell SOrt                 ||   7             61213                     6             0                   5             28780

@@ -1,5 +1,12 @@
+// Collishaw, Andy 20282214
+// Kung, Matthew 20259215
+
 #include <stdio.h>
 //#include "L5_TESTSORT.c"
+
+//Much of this code is taken from other parts of the lab 
+
+
 
 // void printarrowatposition2 (int posn)
 // // Prints a V - a down arrow - where the pivot value will be
@@ -44,26 +51,26 @@ int partution2 (int  *a,  int left, int right)
 }//partution2()
 
 
-int quicksort2 (int *a,  int left, int right)
-{
+// int quicksort2 (int *a,  int left, int right)
+// {
 	
-	if (verbose)
-		printf ("\nQuicksort: left = %d   right = %d\n", left, right);
-	if (left < right)    {
-		int  pivotndx = partution2 (a, left, right);
-		if (verbose)	{
-			printf ("    Completed partution2, pivot at: %d\n", pivotndx);
-			// printarrowatposition2 (pivotndx);
-			printarray (NULL, a, 0, 19, 1000);
-			}
-		quicksort2 (a, left, pivotndx-1);
-		quicksort2 (a, pivotndx+1, right);
-		}
+// 	if (verbose)
+// 		printf ("\nQuicksort: left = %d   right = %d\n", left, right);
+// 	if (left < right)    {
+// 		int  pivotndx = partution2 (a, left, right);
+// 		if (verbose)	{
+// 			printf ("    Completed partution2, pivot at: %d\n", pivotndx);
+// 			// printarrowatposition2 (pivotndx);
+// 			printarray (NULL, a, 0, 19, 1000);
+// 			}
+// 		quicksort2 (a, left, pivotndx-1);
+// 		quicksort2 (a, pivotndx+1, right);
+// 		}
 	
 
 	
-	return swaps;
-}//quicksort()
+// 	return swaps;
+// }//quicksort()
 
 int insertionsort2 (int *a, int min, int max)
 // Work through array of numbers, placing each one in the correct place. Note
@@ -99,19 +106,19 @@ int insertionsort2 (int *a, int min, int max)
 	return rslt;
 }//insertionsort()
 
+//quicksort hybrid function to determine wether quicksort or  insertion sort should be used 
 int quicksorthybrid(int *arr, int Left, int Right)
 {
  
-  int rslt = -1; 
+/
+int rslt = -1; 
   
+  //while the partition is still open 
   while (Left < Right)
     {
 		
-		//printf("\n%d\n", swaps); 
-    // If the size of the array is less
-    // than threshold apply insertion sort
-    // and stop recursion
-	
+		
+	//if there are fewer than 32 datapoints in the partition apply insertion sort 
     if (Right-Left + 1 < 30 )
       {
         insertionsort2(arr, Left, Right);
@@ -121,27 +128,21 @@ int quicksorthybrid(int *arr, int Left, int Right)
     else
        
         {
-          int pivot = partution2(arr, Left, Right) ;
+        int pivot = partution2(arr, Left, Right) ;
  
-      // Optimised quicksort which works on
-      // the smaller arrays first
- 
-      // If the left side of the pivot
-      // is less than right, sort left part
-      // and move to the right part of the array
-	    
-      if (pivot-Left<Right-pivot)
+        
+	    //use quicksort if the partition is above the threshold
+	  	//if left side is less than ride side sort left first 
+        if (pivot-Left<Right-pivot)
         {
-          quicksorthybrid(arr, Left, pivot - 1);
-        Left = pivot + 1;
-      }
-      else
+            quicksorthybrid(arr, Left, pivot - 1);
+            Left = pivot + 1;
+        }
+        else
         {
  
-        // If the right side of pivot is less
-        // than left, sort right side and
-        // move to the left side
-           
+        
+        //if right side of the pivot is less sort that first 
         quicksorthybrid(arr, pivot + 1, Right);
         Right = pivot-1;
         }
@@ -150,6 +151,7 @@ int quicksorthybrid(int *arr, int Left, int Right)
  
    }
    
+   //return the number of swaps 
    rslt = swaps; 
    return rslt; 
 }
