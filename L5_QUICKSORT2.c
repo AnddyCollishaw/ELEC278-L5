@@ -110,7 +110,7 @@ int insertionsort2 (int *a, int min, int max)
 int quicksorthybrid(int *arr, int Left, int Right)
 {
  
-/
+
 int rslt = -1; 
   
   //while the partition is still open 
